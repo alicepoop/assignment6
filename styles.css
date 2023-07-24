@@ -1,0 +1,90 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.portfolio-description {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+aside img:hover {
+    transform: scale(1.05);
+}
+
+aside a[data-title]:hover:after {
+    content: attr(data-title);
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
